@@ -31,7 +31,7 @@
     * [请简述TCP和UDP的区别？](collection/计算机网络.md#请简述TCP和UDP的区别？)
   * [TCP连接及释放](collection/计算机网络.md#TCP连接及释放)
     * [请简述三次握手的过程？为什么两次不行？](collection/计算机网络.md#请简述三次握手的过程？为什么两次不行？)
-    * [TCP三次握手时的第一次的seq序号是怎样产生的 字节提前批](collection/计算机网络.md#TCP三次握手时的第一次的seq序号是怎样产生的 字节提前批)
+    * [TCP三次握手时的第一次的seq序号是怎样产生的字节提前批](collection/计算机网络.md#TCP三次握手时的第一次的seq序号是怎样产生的字节提前批)
     * [请简述四次挥手的过程？为什么三次不行？](collection/计算机网络.md#请简述四次挥手的过程？为什么三次不行？)
     * [TIME_WAIT为什么是2MSL，而不是1MSL或者3MSL？](collection/计算机网络.md#TIME_WAIT为什么是2MSL，而不是1MSL或者3MSL？)
   * [TCP的可靠连接和粘包](collection/计算机网络.md#TCP的可靠连接和粘包)
