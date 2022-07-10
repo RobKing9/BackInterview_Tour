@@ -44,20 +44,22 @@
 
 ## [操作系统](collection/操作系统.md#操作系统)
 
-[进程，线程，协程](collection/操作系统.md#进程，线程，协程)
+- [进程，线程，协程](collection/操作系统.md#进程，线程，协程)
 
-* [简述线程和进程的区别和联系](collection/操作系统.md#简述线程和进程的区别和联系)
+  * [简述线程和进程的区别和联系](collection/操作系统.md#简述线程和进程的区别和联系)
 
-* [进程的状态与状态转换](collection/操作系统.md#进程的状态与状态转换)
+  * [进程的状态与状态转换](collection/操作系统.md#进程的状态与状态转换)
 
-* [并发和并行有什么区别？](collection/操作系统.md#并发和并行有什么区别？)
+  * [并发和并行有什么区别？](collection/操作系统.md#并发和并行有什么区别？)
 
-* [什么是内核态和用户态？如何实现两者之间的相互转换？](collection/操作系统.md#什么是内核态和用户态？如何实现两者之间的相互转换？)
+  * [什么是内核态和用户态？如何实现两者之间的相互转换？](collection/操作系统.md#什么是内核态和用户态？如何实现两者之间的相互转换？)
 
-[存储管理](collection/操作系统.md#存储管理)
+- [存储管理](collection/操作系统.md#存储管理)
 
-- [了解虚拟内存吗？](collection/操作系统.md#了解虚拟内存吗？)
-- [什么是分页？什么是分段？两者有什么区别？](collection/操作系统.md#什么是分页？什么是分段？两者有什么区别？)
+  * [了解虚拟内存吗？](collection/操作系统.md#了解虚拟内存吗？)
+  * [什么是分页？什么是分段？两者有什么区别？](collection/操作系统.md#什么是分页？什么是分段？两者有什么区别？)
+  * [软链接和硬链接有什么区别？](#软链接和硬链接有什么区别？)
+  * [页面置换算法有哪些](#页面置换算法有哪些)
 
 ## 算法和数据结构
 
@@ -69,8 +71,10 @@
 
 ## 参考资料：
 
-[超全面的后端开发C/C++面经整理分享](https://blog.csdn.net/neverever01/article/details/108237531)
+- [超全面的后端开发C/C++面经整理分享](https://blog.csdn.net/neverever01/article/details/108237531)
+- [计算机网络八股文背诵版](https://zhuanlan.zhihu.com/p/366839763)
 
-[计算机网络八股文背诵版](https://zhuanlan.zhihu.com/p/366839763)
-
-[计算机网络面试题（含答案）](https://zhuanlan.zhihu.com/p/138272238)
+- [计算机网络面试题（含答案）](https://zhuanlan.zhihu.com/p/138272238)
+- [操作系统八股文背诵版](https://zhuanlan.zhihu.com/p/373966882)
+- [操作系统常见面试题（2021最新版）](https://zhuanlan.zhihu.com/p/380872920)
+- [操作系统最强面经面试题总结 | 春招秋招必备 | Offer收割](https://blog.csdn.net/LonelyPlanet_/article/details/89115669)
