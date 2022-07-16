@@ -560,12 +560,18 @@ B. s: [A,Z,C]
 所以本例，会先计算 s[i-1]，等号右边是两个表达式是常量，所以赋值运算等同于 i, s[0] = 2, "Z"。
 ```
 
-## 16、
+## 16、switch语句
 
-### 题目
+### 关于switch语句，下面说法正确的有?
 
 ```golang
-题目
+A. 条件表达式必须为常量或者整数；
+
+B. 单个case中，可以出现多个结果选项；
+
+C. 需要用break来明确退出一个case；
+
+D. 只有在case中明确添加fallthrough关键字，才会继续执行紧跟的下一个case；题目
 ```
 
 
@@ -573,15 +579,46 @@ B. s: [A,Z,C]
 ### 答案及解析
 
 ```golang
-参考答案
+参考答案及解析：BD
 ```
 
-## 17、
+## 17、类型断言
 
-### 题目
+### 如果 Add() 函数的调用代码为：
 
 ```golang
-题目
+func main() {
+    var a Integer = 1
+    var b Integer = 2
+    var i interface{} = &a
+    sum := i.(*Integer).Add(b)
+    fmt.Println(sum)
+}
+则Add函数定义正确的是()
+
+A.
+type Integer int
+func (a Integer) Add(b Integer) Integer {
+        return a + b
+}
+
+B.
+type Integer int
+func (a Integer) Add(b *Integer) Integer {
+        return a + *b
+}
+
+C.
+type Integer int
+func (a *Integer) Add(b Integer) Integer {
+        return *a + b
+}
+
+D.
+type Integer int
+func (a *Integer) Add(b *Integer) Integer {
+        return *a + *b
+}
 ```
 
 
@@ -589,23 +626,29 @@ B. s: [A,Z,C]
 ### 答案及解析
 
 ```golang
-参考答案
+参考答案及解析：AC。知识点：类型断言、方法集
 ```
 
-## 18、
+[接口讲解](https://mp.weixin.qq.com/s?__biz=MzI2MDA1MTcxMg==&mid=2648466700&idx=1&sn=25c48d78dcfad6c70330cd36dd749e53&chksm=f2474363c530ca75132454e4e10e40659310a073e2f9d30ad9697d4abf7c2b9e5aa9adee58bf&scene=21#wechat_redirect)
 
-### 题目
+## 18、bool变量
+
+### 关于 bool 变量 b 的赋值，下面错误的用法是？
 
 ```golang
-题目
+A. b = true
+
+B. b = 1
+
+C. b = bool(1)
+
+D. b = (1 == 2)
 ```
-
-
 
 ### 答案及解析
 
 ```golang
-参考答案
+参考答案及解析：BC。
 ```
 
 ## 19、
