@@ -651,12 +651,18 @@ D. b = (1 == 2)
 参考答案及解析：BC。
 ```
 
-## 19、
+## 19、常量地址
 
-### 题目
+### 下面代码有什么问题？
 
 ```golang
-题目
+1const i = 100
+2var j = 123
+3
+4func main() {
+5    fmt.Println(&j, j)
+6    fmt.Println(&i, i)
+7}
 ```
 
 
@@ -664,15 +670,37 @@ D. b = (1 == 2)
 ### 答案及解析
 
 ```golang
-参考答案
+参考答案及解析：编译报错cannot take the address of i。知识点：常量。常量不同于变量的在运行期分配内存，常量通常会被编译器在预处理阶段直接展开，作为指令数据使用，所以常量无法寻址。
 ```
 
-## 20、
+## 20、协程和管道
 
-### 题目
+### 下面代码输出什么？
 
 ```golang
-题目
+ 1 func main() {
+ 2    ch := make(chan int, 100)
+ 3    // A
+ 4    go func() {              
+ 5        for i := 0; i < 10; i++ {
+ 6            ch <- i
+ 7        }
+ 8    }()
+ 9    // B
+10    go func() {
+11        for {
+12            a, ok := <-ch
+13            if !ok {
+14                fmt.Println("close")
+15                return
+16            }
+17            fmt.Println("a: ", a)
+18        }
+19    }()
+20    close(ch)
+21    fmt.Println("ok")
+22    time.Sleep(time.Second * 10)
+23}
 ```
 
 
@@ -680,7 +708,7 @@ D. b = (1 == 2)
 ### 答案及解析
 
 ```golang
-参考答案
+参考答案及解析：程序抛异常。先定义下，第一个协程为 A 协程，第二个协程为 B 协程；当 A 协程还没起时，主协程已经将 channel 关闭了，当 A 协程往关闭的 channel 发送数据时会 panic，panic: send on closed channel。
 ```
 
 ## 21、
